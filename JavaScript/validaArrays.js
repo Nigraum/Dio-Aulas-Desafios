@@ -6,9 +6,9 @@ function validaArray(arr, num){
      throw new TypeError("O array precisa ser do tipo Object");
 
     if (typeof num !== 'number') 
-     throw new TypeError("O array precisa ser do tipo number");
+     throw new TypeError("Num precisa ser do tipo number");
 
-    if (arr.length !== num) throw new RangeError("Tamanha incorreto");
+    if (arr.length !== num) throw new RangeError("Tamanho incorreto");
 
     return arr;
     }
