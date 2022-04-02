@@ -12,7 +12,7 @@ const getCats = async () => {
 };
 
 const loadImg = async () => {
-    const catImg = document.getElementById('cat');
+    const catImg = document.getElementByTag('cat');
     catImg.src = await getCats();
 };
 
