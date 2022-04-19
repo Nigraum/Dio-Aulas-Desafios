@@ -1,3 +1,2 @@
-<span align="center">
- # Desafio de Projeto Jogo da Velha # 
- </span>
+# Desafio de Projeto Jogo da Velha # 
+
