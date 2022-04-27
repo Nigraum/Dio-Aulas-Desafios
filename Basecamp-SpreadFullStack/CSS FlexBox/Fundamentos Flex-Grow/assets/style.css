@@ -2,6 +2,7 @@
     display: flex;
     border: 2px solid black;
     max-width: 300px;
+    
 }
 
 .item {
@@ -14,4 +15,16 @@
 
 .fg-0 {
     flex-grow: 0;
+}
+
+.fg-1 {
+    flex-grow: 1;
+}
+
+.fg-2 {
+    flex-grow: 3;
+}
+
+.fg-3 {
+    flex-grow: 3;
 }
