@@ -5,17 +5,16 @@ class Pessoa {
   var cpf: String = "123.123.123-11"
   private set
 
-  inner class Endereco {
-    var rua: String = "Rua santo"
-  }
+
+  constructor ()
+
+  fun pessoaInfo() = "$nome e $cpf"
 }
 
 fun main() {
   val yan = Pessoa()
 
-  println(yan.nome)
-  println(yan.cpf)
+    println(yan.pessoaInfo())
 
-  println(yan.Endereco().rua)
 }
 
