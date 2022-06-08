@@ -18,3 +18,5 @@ fun main() {
 
 }
 
+test git
+
