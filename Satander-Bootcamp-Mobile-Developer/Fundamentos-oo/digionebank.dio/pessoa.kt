@@ -3,6 +3,10 @@ package digionebank.dio
 class Pessoa {
   var nome: String = "Yan"
   var cpf: String = "123.123.123-11"
+
+  inner class Endereco {
+    var rua: String = "Rua santo"
+  }
 }
 
 fun main() {
@@ -10,4 +14,6 @@ fun main() {
 
   println(yan.nome)
   println(yan.cpf)
+
+  println(yan.Endereco().rua)
 }
