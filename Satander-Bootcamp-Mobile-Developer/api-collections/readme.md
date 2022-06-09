@@ -1,1 +1,1 @@
-# Aula sobre colletions em kotlin
+# Aula sobre collections em kotlin
