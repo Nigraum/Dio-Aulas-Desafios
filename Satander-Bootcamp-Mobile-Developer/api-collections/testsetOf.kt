@@ -8,6 +8,11 @@ fun main() {
 
     val resultUnion = funcionarios1.union(funcionarios2)
     resultUnion.forEach { println(it) }
+
+    println("-----------------------")
+    val funcionarios3 = setOf(joao, maicon, ana)
+    val resultSub = funcionarios3.subtract(funcionarios2)
+    resultSub.forEach {println(it)}
 }
 
 
