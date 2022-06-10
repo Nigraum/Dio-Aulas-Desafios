@@ -1,6 +1,6 @@
 fun main() {
- val douglas = Funcionario("Douglas", 1000.0)
- val pedro = Funcionario("Pedro", 2000.0)
+ val douglas = Funcionario("Douglas", 2000.0)
+ val pedro = Funcionario("Pedro", 1500.0)
  val alisu = Funcionario("Alisu", 4000.0)
 
  val funcionarios = listOf(douglas, pedro, alisu)
@@ -9,6 +9,9 @@ fun main() {
 
  println("-----------------")
  println(funcionarios.find { it.nome == "Alisu" })
+
+ println("------------------")
+ funcionarios.sortedBy {it.salario}.forEach { println(it) }
 }
 
 data class Funcionario(
