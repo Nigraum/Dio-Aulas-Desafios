@@ -1,7 +1,7 @@
 fun main() {
- val douglas = Funcionario("Douglas", 2000.0)
- val pedro = Funcionario("Pedro", 1500.0)
- val alisu = Funcionario("Alisu", 4000.0)
+ val douglas = Funcionario("Douglas", 2000.0, "CLT")
+ val pedro = Funcionario("Pedro", 1500.0, "PJ")
+ val alisu = Funcionario("Alisu", 4000.0, "PJ")
 
  val funcionarios = listOf(douglas, pedro, alisu)
 
@@ -12,11 +12,17 @@ fun main() {
 
  println("------------------")
  funcionarios.sortedBy {it.salario}.forEach { println(it) }
+
+ println("------------------")
+ funcionarios
+    .groupBy { it.tipoContrato }
+    .forEach { println(it) }
 }
 
 data class Funcionario(
     val nome:String,
-    val salario: Double
+    val salario: Double,
+    val tipoContrato: String
 ) {
     override fun toString(): String =
     """
