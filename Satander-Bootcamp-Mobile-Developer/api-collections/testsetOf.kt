@@ -13,6 +13,10 @@ fun main() {
     val funcionarios3 = setOf(joao, maicon, ana)
     val resultSub = funcionarios3.subtract(funcionarios2)
     resultSub.forEach {println(it)}
+
+    println("-----------------------")
+    val resultInter = funcionarios3.intersect(funcionarios2)
+    resultInter.forEach { println(it) }
 }
 
 
