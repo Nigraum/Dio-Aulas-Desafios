@@ -13,6 +13,16 @@ fun main() {
     println("------------------")
     funcionarios.remove(joao)
     funcionarios.forEach {println(it)}
+
+    println("--------SET---------")
+    val funcionariosSet = mutableSetOf(joao)
+    // funcionariosSet.forEach {println(it)}
+
+    funcionariosSet.add(pedro)
+    funcionariosSet.add(maria)
+    funcionariosSet.forEach {println(it)}
+
+
 }
 
 data class Funcionario(
